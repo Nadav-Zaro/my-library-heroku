@@ -1,0 +1,357 @@
+/* Home */
+.homeEnter {
+    height: 100vh;
+    width: 100%;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 0 0 50% 50% /0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+
+.homeContain{
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.homeContain h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size:  3em;
+}
+
+.homeContain p{
+    color: #fff;
+    font-size:  1.2em;
+}
+
+.homeButtons{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12.5%;
+    text-align: center;
+}
+
+.homeButtons button{
+    cursor: pointer;
+    width: 47%;
+    height: 20%;
+    color: whitesmoke;
+    background: #23a6d5;
+    border: .4px inset whitesmoke;
+    border-radius: 3.5px;
+    padding: 8px;
+    transition: .5s;
+}
+
+.homeButtons button:hover{
+    transform: scale(1.04);
+    filter: drop-shadow(1px 1px 1.5px whitesmoke);
+}
+
+.loginOrRegister{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 15px;
+    top: 0;
+    width: 100%;
+    height: 45vh;
+    background: whitesmoke;
+    border: 3.5px solid #23a6d5;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    font-family: sans-serif;
+}
+
+.loginOrRegister button{
+    cursor: pointer;
+    color: whitesmoke;
+    background: #23a6d5;
+    border: .4px inset whitesmoke;
+    border-radius: 2.5px;
+    padding: 5px;
+    transition: .5s;
+}
+
+.loginOrRegister img{
+    position: absolute;
+    right: 2%;
+    top: 0;
+    height: 8%;
+    width: 8%;
+    cursor: pointer;
+}
+
+.loginOrRegister form{
+    margin-top: 2%;
+}
+
+.loginOrRegister p{
+    color: black;
+}
+
+.loginOrRegister button{
+    cursor: pointer;
+}
+
+.logOut{
+    display: none;
+}
+
+/* pageOpen */
+.pagesOpen{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+/* Search */
+.search{
+    margin-top: 2%;
+    width: 100%;
+}
+
+.search input{
+    width: 35%;
+    height: 4vh;
+    border-radius: 4px;
+}
+
+.search label{
+    font-size: 1.8em;
+}
+
+/* BooksDisplay */
+.books{
+    position: relative;
+    margin-left: 15%;
+    margin-top: 1.5%;
+    padding: 10px;
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    box-shadow: 1.5px -1.5px 2px black;
+}
+
+.bookImg{
+    width: 30%;
+    height: 98%;
+}
+
+.booksDetails{
+    width: 67%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 1px -1px 1px  #ee7752;
+}
+
+.booksDetails h2{
+    width: 48%;
+}
+
+.booksDetails h4{
+    width: 48%;
+    font-weight: 450;
+    font-style: italic;
+    font-family:cursive;
+    text-align: end;
+}
+
+.booksDetails p{
+    width: 100%;
+    cursor: pointer;
+}
+
+.booksDetails p:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(.5px .5px .5px black);
+}
+
+.addToList{
+    position: absolute;
+    right: -1%;
+    top: 45%;
+    cursor: pointer;
+}
+
+.addToList img{
+    height: 50%;
+    width: 50%;
+}
+
+.addToList img:hover{
+    filter: drop-shadow(.5px .5px .5px black);
+}
+
+.addAndDelete{
+    position: absolute;
+    top: 35%;
+    right: -2%;
+}
+
+.addAndDelete img{
+    height: 50%;
+    width: 50%;
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+.addAndDelete img:hover{
+    filter: drop-shadow(.5px .5px .5px black);
+}
+
+/* Details */
+.allDetails{font-family: sans-serif;}
+
+.pagesOpen button{
+    cursor: pointer;
+    color: #23d5ab;
+    background: white;
+    border: 2px inset #23d5ab;
+    border-radius: 2.5px;
+}
+.Detail{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    left: 10%;
+}
+.Detail img{
+    width: 40%;
+    height: 100%;
+}
+
+.Detail h1{
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.Detail h3{
+    margin-left: -15%;
+    margin-top: 14%;
+}
+
+.allDetails p {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.starHolder{
+    display: flex;
+    width: 12%;
+    height: 10%;
+    position: absolute;
+    top: 33%;
+    left: 43%;
+}
+
+.stardetail{
+    position: absolute;
+    top: 70%;
+    left: 52%;
+}
+
+.star {color: white;filter: drop-shadow(1px 1px 1px gold);font-size: 25px;}
+
+
+.spinner{
+    border: 1.5px solid white;
+    border-top: 1.5px solid #23a6d5;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    animation: spin 1.5s infinite linear;
+  }
+  
+  @keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }
+
+
+  @media screen and (max-width:768px) {
+    .pagesOpen{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20%;
+    }
+    .search input{width: 70%;}
+    .books{height: 30vh;}
+  }
+
+  @media screen and (max-width:425px) {
+    .books{height: 30vh;margin-top: 15%;width: 95%;margin-left: 0%;}
+    .booksDetails{
+        height: 60%;
+        padding: 0;
+    }
+    .stardetail{
+        top: 50%;
+        left: 45%;
+    }
+    .Detail{width: 95%;left: 0%;}
+    .Detail img{
+        width: 40%;
+        height: 100%;
+    }
+    .Detail h1{
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .Detail h3{
+        margin-left: -40%;
+        margin-top: 34%;
+    }
+    .star{font-size: 15px;}
+  }
