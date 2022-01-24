@@ -23,7 +23,7 @@ export default function useLoginOrRegister(url,setAuth) {
             localStorage.setItem(STORAGE_KEY,JSON.stringify(res.data))
             console.log(res)
         })
-        .catch(err=>{console.log(err.response);setIsError(err);setIsLoading(false)})
+        .catch(err=>{console.log(err.response);setIsError(err.response.data.error.message);setIsLoading(false)})
     }
 
     return {confirmPassword,email,password,getAxios,isLoading,isError}

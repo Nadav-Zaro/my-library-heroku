@@ -37,8 +37,8 @@ export default function Register({auth,setAuth,isRegister,setIsRegister}) {
                 <input ref={confirmPassword} type="password" placeholder='ConfirmPassword'/><br/><br/> 
                 <button style={{background:"#23d5ab"}} disabled={!isDisable} type="submit">{isLoading ? <div className={style.spinner}></div> : "Register"}</button>
             </form>
-            {isError ? <h2 style={{color:"red"}}>Error</h2> : ""}
-            {isValid() ? "" : <p>U must enter details first ... </p>}
+            {isError ? <h2 style={{color:"red"}}>{isError}</h2> : ""}
+            {isValid() ? "" : <p>You must enter details first ... </p>}
         </div>
     )
 }

@@ -17,7 +17,7 @@ const BooksDisplay=({isVisible,searchInput,books,setBooks,setisRedirect,setBookD
             }
         })
         .map(it=>{
-            if (!it.id < 10) {
+            if (it.id < 10) {
                return (
             <div key={it.id} className={style.books}>
             <img src={it.img} className={style.bookImg}/>

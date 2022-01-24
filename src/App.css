@@ -1,7 +1,7 @@
 .App {
   margin: 0;
   text-align: center;
-  background: url("https://th.bing.com/th/id/OIP.XxjBONglP6Jso73ng5LcuAHaNK?pid=ImgDet&rs=1");
+  background: linear-gradient(90deg,#23a5d596,#23d5ab73);
   background-size: 100% 100%;
 }
 
@@ -25,7 +25,7 @@ button {
   color: #e73c7e;
   background: white;
   border: 2px inset #e73c7e;
-  border-radius: 2.5px;
+  border-radius: 4px;
   padding: 2px;
 }
 
@@ -79,6 +79,7 @@ button {
 
 footer{
   margin-top: 15%;
+  font-weight: 600;
   border-top: 1px solid black
 }
 
@@ -93,7 +94,7 @@ footer{
 }
 
 @media screen and (max-width:425px) {
-  .logOut button{width: 27%}
+  .logOut button{width: 25%;font-weight: 600;}
   .linksHolder{
     width: 90%;
     height: 4%;

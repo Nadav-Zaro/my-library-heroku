@@ -32,8 +32,8 @@ export default function Login({auth,setAuth,isLogin,setIsLogin}) {
                 <input ref={password} type="password" placeholder='Password'/><br/><br/>
                 <button disabled={!isDisable} type="submit">{isLoading ? <div className={style.spinner}></div> : "Login"}</button>
             </form>
-            {isError ? <h2 style={{color:"red"}}>Error</h2> : ""}
-            {isValid() ? "" : <p>U must enter details first ... </p>}
+            {isError ? <h2 style={{color:"red"}}>{isError}</h2> : ""}
+            {isValid() ? "" : <p>You must enter details first ... </p>}
         </div>
     )
 }
